@@ -5,7 +5,7 @@ use Carbon_Fields\Field;
 
 add_action('carbon_fields_register_fields', 'crb_attach_record_fields');
 
-function crb_attach_actionitem_fields()
+function crb_attach_record_fields()
 {
     Container::make('post_meta', 'Additional fields for a record')
         ->where('post_type', '=', 'record')

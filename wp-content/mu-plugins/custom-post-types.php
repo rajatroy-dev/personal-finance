@@ -51,6 +51,7 @@ function record_post_type()
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'capability_type'       => 'page',
+		'menu_icon'				=> 'dashicons-text-page',
     );
     register_post_type('record', $args);
 }
