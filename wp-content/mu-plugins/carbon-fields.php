@@ -35,6 +35,8 @@ function crb_attach_record_fields()
                         ->set_attribute('readOnly', 'true')
                         ->set_attribute('type', 'number')
                         ->set_required(true),
+                    Field::make('text', 'credit_comment', __('Comments or Remarks'))
+                        ->set_required(true),
                 ))
                 ->set_required(true),
             Field::make('complex', 'crb_record_debit_history', __('All the debit record history'))
@@ -49,6 +51,8 @@ function crb_attach_record_fields()
                     Field::make('text', 'total_debit', __('Debit Amount x Frequency'))
                         ->set_attribute('readOnly', 'true')
                         ->set_attribute('type', 'number')
+                        ->set_required(true),
+                    Field::make('text', 'debit_comment', __('Comments or Remarks'))
                         ->set_required(true),
                 ))
                 ->set_required(true),
