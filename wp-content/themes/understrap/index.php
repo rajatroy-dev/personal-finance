@@ -28,7 +28,7 @@ $container = get_theme_mod('understrap_container_type');
 
 	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
-		<section class="my-3">
+		<section class="my-4">
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item" role="presentation">
 					<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
@@ -42,6 +42,48 @@ $container = get_theme_mod('understrap_container_type');
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
 					tabindex="0">
+
+					<section class="my-4">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										Review Recurring Investments
+									</button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+
+										<div class="d-flex justify-content-evenly my-1">
+											<a href="#" class="btn btn-success flex-grow-1 me-2">APPROVE</a>
+											<a href="#" class="btn btn-danger flex-grow-1 ms-2">REJECT</a>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Investment</th>
+														<th scope="col">Amount</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Car</td>
+														<td>₹10,000.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 
 					<div class="d-flex justify-content-end my-3">
 						<a href="#" class="btn btn-primary w-100">VIEW IN DETAILS</a>
@@ -80,8 +122,51 @@ $container = get_theme_mod('understrap_container_type');
 						</table>
 					</div>
 				</div>
+
 				<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
 					tabindex="0">
+
+					<section class="my-4">
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+										Review Recurring Savings
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+
+										<div class="d-flex justify-content-evenly my-1">
+											<a href="#" class="btn btn-success flex-grow-1 me-2">APPROVE</a>
+											<a href="#" class="btn btn-danger flex-grow-1 ms-2">REJECT</a>
+										</div>
+
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Saving</th>
+														<th scope="col">Amount</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>Car</td>
+														<td>₹10,000.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 
 					<div class="d-flex justify-content-end my-3">
 						<a href="#" class="btn btn-primary w-100">VIEW IN DETAILS</a>
