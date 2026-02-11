@@ -73,3 +73,9 @@ if ( ! function_exists( 'understrap_offcanvas_admin_bar_inline_styles' ) ) {
 		wp_add_inline_style( 'understrap-styles', $css );
 	}
 }
+
+function bootstrap_icons()
+{
+	wp_enqueue_style('bootstrap_icons', '//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+}
+add_action('wp_enqueue_scripts', 'bootstrap_icons');
